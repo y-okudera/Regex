@@ -10,19 +10,33 @@ import XCTest
 
 final class PasswordValidateUseCaseTests: XCTestCase {
 
+    private var sut: PasswordValidateUseCase!
+
+    override func setUp() {
+        super.setUp()
+        sut = PasswordValidateUseCaseProvider.provide()
+    }
+
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
+    }
+
     func testValidInput() {
-        let sut = PasswordValidateUseCaseProvider.provide()
         XCTAssertTrue(sut.execute("abc123/.@-!?"))
         XCTAssertTrue(sut.execute("abcdefghi"))
         XCTAssertTrue(sut.execute("/.@!?-1234"))
     }
 
     func testInvalidInput() {
-        let sut = PasswordValidateUseCaseProvider.provide()
         XCTAssertFalse(sut.execute("abc"))
         XCTAssertFalse(sut.execute("1234567"))
         XCTAssertFalse(sut.execute("a!b@c#d$"))
         XCTAssertFalse(sut.execute("abcdefg "))
         XCTAssertFalse(sut.execute("あいうえお"))
+        XCTAssertFalse(sut.execute("１２３４５６７８９０"))
+        XCTAssertFalse(sut.execute("12345678９0"))
+        XCTAssertFalse(sut.execute("12345678 0"))
     }
+
 }

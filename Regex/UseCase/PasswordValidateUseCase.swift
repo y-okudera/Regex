@@ -20,7 +20,10 @@ protocol PasswordValidateUseCase {
 
 private struct PasswordValidateInteractor: PasswordValidateUseCase {
     func execute(_ input: String) -> Bool {
-        let regex = #"^[\w/.@!?-]{8,}$"#
-        return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: input)
+
+        // 正規表現パターン
+        let pattern = #"^[A-Za-z0-9/.@!?-]{8,}$"#
+
+        return input.range(of: pattern, options: .regularExpression) != nil
     }
 }
