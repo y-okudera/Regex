@@ -23,18 +23,18 @@ final class EmailValidateUseCaseTests: XCTestCase {
     }
 
     func testValidEmail() {
-        let email = "test@example.com"
-        XCTAssertTrue(sut.execute(email: email))
+        XCTAssertTrue(sut.execute(email: "test@example.com"))
     }
 
     func testInvalidEmail() {
-        let email = "invalid.email"
-        XCTAssertFalse(sut.execute(email: email))
+        XCTAssertFalse(sut.execute(email: "invalid.email"))
+        XCTAssertFalse(sut.execute(email: "あいうえお@example.com"))
+        XCTAssertFalse(sut.execute(email: "test１@example.com"))
+        XCTAssertFalse(sut.execute(email: "test @example.com"))
     }
 
     func testEmptyEmail() {
-        let email = ""
-        XCTAssertFalse(sut.execute(email: email))
+        XCTAssertFalse(sut.execute(email: ""))
     }
 
 }
