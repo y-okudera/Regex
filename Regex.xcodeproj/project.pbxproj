@@ -16,6 +16,8 @@
 		B6A215FE29C4A891008F9D5C /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A215FD29C4A891008F9D5C /* RegexTests.swift */; };
 		B6A2160829C4A891008F9D5C /* RegexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2160729C4A891008F9D5C /* RegexUITests.swift */; };
 		B6A2160A29C4A891008F9D5C /* RegexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */; };
+		B6A2161829C4A977008F9D5C /* PasswordValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */; };
+		B6A2161B29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B6A2160329C4A891008F9D5C /* RegexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A2160729C4A891008F9D5C /* RegexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUITests.swift; sourceTree = "<group>"; };
 		B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidateUseCase.swift; sourceTree = "<group>"; };
+		B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidateUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		B6A215E529C4A890008F9D5C /* Regex */ = {
 			isa = PBXGroup;
 			children = (
+				B6A2161629C4A942008F9D5C /* UseCase */,
 				B6A215E629C4A890008F9D5C /* AppDelegate.swift */,
 				B6A215E829C4A890008F9D5C /* SceneDelegate.swift */,
 				B6A215EA29C4A890008F9D5C /* ViewController.swift */,
@@ -113,6 +118,7 @@
 		B6A215FC29C4A891008F9D5C /* RegexTests */ = {
 			isa = PBXGroup;
 			children = (
+				B6A2161929C4A98B008F9D5C /* UseCase */,
 				B6A215FD29C4A891008F9D5C /* RegexTests.swift */,
 			);
 			path = RegexTests;
@@ -125,6 +131,22 @@
 				B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */,
 			);
 			path = RegexUITests;
+			sourceTree = "<group>";
+		};
+		B6A2161629C4A942008F9D5C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B6A2161929C4A98B008F9D5C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +282,7 @@
 			files = (
 				B6A215EB29C4A890008F9D5C /* ViewController.swift in Sources */,
 				B6A215E729C4A890008F9D5C /* AppDelegate.swift in Sources */,
+				B6A2161829C4A977008F9D5C /* PasswordValidateUseCase.swift in Sources */,
 				B6A215E929C4A890008F9D5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A2161B29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift in Sources */,
 				B6A215FE29C4A891008F9D5C /* RegexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
