@@ -18,6 +18,8 @@
 		B6A2160A29C4A891008F9D5C /* RegexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */; };
 		B6A2161829C4A977008F9D5C /* PasswordValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */; };
 		B6A2161B29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */; };
+		B6A2161D29C4AE78008F9D5C /* EmailValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */; };
+		B6A2161F29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidateUseCase.swift; sourceTree = "<group>"; };
 		B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidateUseCaseTests.swift; sourceTree = "<group>"; };
+		B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateUseCase.swift; sourceTree = "<group>"; };
+		B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */,
+				B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A2161A29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift */,
+				B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				B6A215E729C4A890008F9D5C /* AppDelegate.swift in Sources */,
 				B6A2161829C4A977008F9D5C /* PasswordValidateUseCase.swift in Sources */,
 				B6A215E929C4A890008F9D5C /* SceneDelegate.swift in Sources */,
+				B6A2161D29C4AE78008F9D5C /* EmailValidateUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A2161F29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift in Sources */,
 				B6A2161B29C4A99B008F9D5C /* PasswordValidateUseCaseTests.swift in Sources */,
 				B6A215FE29C4A891008F9D5C /* RegexTests.swift in Sources */,
 			);
