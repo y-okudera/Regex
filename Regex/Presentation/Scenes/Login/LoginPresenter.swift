@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class LoginPresenter: ObservableObject {
+final class LoginPresenter: Presenter {
 
-    private let appState: AppState
+    let appState: AppState
 
     init(appState: AppState) {
         self.appState = appState

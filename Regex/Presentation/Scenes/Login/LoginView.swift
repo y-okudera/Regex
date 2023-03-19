@@ -9,22 +9,18 @@ import SwiftUI
 
 struct LoginView: View {
 
-    @StateObject var presenter: LoginPresenter
-
-    init(appState: AppState) {
-        _presenter = StateObject(wrappedValue: .init(appState: appState))
-    }
+    var presenter: LoginPresenter!
 
     var body: some View {
-        Button("Login", action: {
+        Button("ログイン", action: {
             self.presenter.apply(inputs: .didTapLoginButton)
         })
-        .buttonStyle(RoundedButtonStyle(bgColor: .purple, fgColor: .white))
+        .buttonStyle(RoundedButtonStyle.main)
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(appState: AppState())
+        LoginView()
     }
 }

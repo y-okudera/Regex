@@ -13,9 +13,9 @@ struct RootView: View {
     var body: some View {
         ZStack {
             if appState.isLogin {
-                MenuView()
+                AppTabView()
             } else {
-                LoginView(appState: self.appState)
+                LoginViewBuilder.build(appState: appState)
             }
         }
     }
@@ -23,6 +23,6 @@ struct RootView: View {
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView().environmentObject(AppState())
+        RootView()
     }
 }

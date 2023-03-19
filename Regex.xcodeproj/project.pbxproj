@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B67555F829C5E531005F2BE2 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67555F729C5E531005F2BE2 /* Presenter.swift */; };
+		B67555FA29C5FD76005F2BE2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67555F929C5FD76005F2BE2 /* Router.swift */; };
+		B67555FD29C606AD005F2BE2 /* PasswordSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67555FC29C606AD005F2BE2 /* PasswordSettingView.swift */; };
+		B67555FF29C60CB6005F2BE2 /* MenuViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67555FE29C60CB6005F2BE2 /* MenuViewBuilder.swift */; };
+		B675560229C615B7005F2BE2 /* EmailSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675560129C615B7005F2BE2 /* EmailSettingView.swift */; };
 		B6A215E729C4A890008F9D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A215E629C4A890008F9D5C /* AppDelegate.swift */; };
 		B6A215E929C4A890008F9D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A215E829C4A890008F9D5C /* SceneDelegate.swift */; };
 		B6A215F029C4A891008F9D5C /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A215EF29C4A891008F9D5C /* AppIcon.xcassets */; };
@@ -25,6 +30,19 @@
 		B6C2356929C553DF00DB08F6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2356829C553DF00DB08F6 /* MenuView.swift */; };
 		B6C2356B29C5554300DB08F6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2356A29C5554300DB08F6 /* LoginPresenter.swift */; };
 		B6C2357229C5616300DB08F6 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2357129C5616300DB08F6 /* RoundedButtonStyle.swift */; };
+		B6C2357529C579D500DB08F6 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2357429C579D500DB08F6 /* AppTabView.swift */; };
+		B6C2357729C57F1200DB08F6 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2357629C57F1200DB08F6 /* MenuPresenter.swift */; };
+		B6C2357D29C5906800DB08F6 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2357C29C5906800DB08F6 /* MenuViewModel.swift */; };
+		B6E0A52A29C75968003B4145 /* RootViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A52929C75968003B4145 /* RootViewBuilder.swift */; };
+		B6E0A52C29C75ACF003B4145 /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A52B29C75ACF003B4145 /* LoginViewBuilder.swift */; };
+		B6E0A52E29C767F8003B4145 /* ValidationMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A52D29C767F8003B4145 /* ValidationMenus.swift */; };
+		B6E0A53129C768B1003B4145 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53029C768B1003B4145 /* Selection.swift */; };
+		B6E0A53329C76BEC003B4145 /* EmailSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53229C76BEC003B4145 /* EmailSettingPresenter.swift */; };
+		B6E0A53529C76C07003B4145 /* EmailSettingViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53429C76C07003B4145 /* EmailSettingViewBuilder.swift */; };
+		B6E0A53729C76C71003B4145 /* EmailSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53629C76C71003B4145 /* EmailSettingViewModel.swift */; };
+		B6E0A53929C770AB003B4145 /* PasswordSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53829C770AB003B4145 /* PasswordSettingPresenter.swift */; };
+		B6E0A53B29C770BD003B4145 /* PasswordSettingViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53A29C770BD003B4145 /* PasswordSettingViewBuilder.swift */; };
+		B6E0A53D29C770C9003B4145 /* PasswordSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0A53C29C770C9003B4145 /* PasswordSettingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B67555F729C5E531005F2BE2 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		B67555F929C5FD76005F2BE2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B67555FC29C606AD005F2BE2 /* PasswordSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingView.swift; sourceTree = "<group>"; };
+		B67555FE29C60CB6005F2BE2 /* MenuViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewBuilder.swift; sourceTree = "<group>"; };
+		B675560129C615B7005F2BE2 /* EmailSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSettingView.swift; sourceTree = "<group>"; };
 		B6A215E329C4A890008F9D5C /* Regex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Regex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A215E629C4A890008F9D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A215E829C4A890008F9D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +90,19 @@
 		B6C2356829C553DF00DB08F6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		B6C2356A29C5554300DB08F6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B6C2357129C5616300DB08F6 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
+		B6C2357429C579D500DB08F6 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		B6C2357629C57F1200DB08F6 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		B6C2357C29C5906800DB08F6 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		B6E0A52929C75968003B4145 /* RootViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewBuilder.swift; sourceTree = "<group>"; };
+		B6E0A52B29C75ACF003B4145 /* LoginViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBuilder.swift; sourceTree = "<group>"; };
+		B6E0A52D29C767F8003B4145 /* ValidationMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationMenus.swift; sourceTree = "<group>"; };
+		B6E0A53029C768B1003B4145 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		B6E0A53229C76BEC003B4145 /* EmailSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSettingPresenter.swift; sourceTree = "<group>"; };
+		B6E0A53429C76C07003B4145 /* EmailSettingViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSettingViewBuilder.swift; sourceTree = "<group>"; };
+		B6E0A53629C76C71003B4145 /* EmailSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSettingViewModel.swift; sourceTree = "<group>"; };
+		B6E0A53829C770AB003B4145 /* PasswordSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingPresenter.swift; sourceTree = "<group>"; };
+		B6E0A53A29C770BD003B4145 /* PasswordSettingViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingViewBuilder.swift; sourceTree = "<group>"; };
+		B6E0A53C29C770C9003B4145 /* PasswordSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +130,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B67555F229C5D9BF005F2BE2 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				B67555F929C5FD76005F2BE2 /* Router.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		B67555F529C5E518005F2BE2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B67555F629C5E523005F2BE2 /* Presenter */,
+				B6E0A52F29C768A6003B4145 /* ViewModel */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B67555F629C5E523005F2BE2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B67555F729C5E531005F2BE2 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B67555FB29C6069F005F2BE2 /* PasswordSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0A53829C770AB003B4145 /* PasswordSettingPresenter.swift */,
+				B67555FC29C606AD005F2BE2 /* PasswordSettingView.swift */,
+				B6E0A53A29C770BD003B4145 /* PasswordSettingViewBuilder.swift */,
+				B6E0A53C29C770C9003B4145 /* PasswordSettingViewModel.swift */,
+			);
+			path = PasswordSetting;
+			sourceTree = "<group>";
+		};
+		B675560029C615A9005F2BE2 /* EmailSetting */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0A53229C76BEC003B4145 /* EmailSettingPresenter.swift */,
+				B675560129C615B7005F2BE2 /* EmailSettingView.swift */,
+				B6E0A53429C76C07003B4145 /* EmailSettingViewBuilder.swift */,
+				B6E0A53629C76C71003B4145 /* EmailSettingViewModel.swift */,
+			);
+			path = EmailSetting;
+			sourceTree = "<group>";
+		};
 		B6A215DA29C4A890008F9D5C = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +229,8 @@
 		B6A2161629C4A942008F9D5C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */,
 				B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */,
+				B6A2161729C4A977008F9D5C /* PasswordValidateUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -178,7 +261,9 @@
 			children = (
 				B6C2355C29C542A100DB08F6 /* Components */,
 				B6C2355829C541F400DB08F6 /* Resources */,
+				B67555F229C5D9BF005F2BE2 /* Routing */,
 				B6C2355B29C5429700DB08F6 /* Scenes */,
+				B67555F529C5E518005F2BE2 /* Utility */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -194,8 +279,11 @@
 		B6C2355B29C5429700DB08F6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6C2357329C5784100DB08F6 /* AppTab */,
+				B675560029C615A9005F2BE2 /* EmailSetting */,
 				B6C2356429C552D700DB08F6 /* Login */,
 				B6C2356729C5538800DB08F6 /* Menu */,
+				B67555FB29C6069F005F2BE2 /* PasswordSetting */,
 				B6C2356129C5488000DB08F6 /* Root */,
 			);
 			path = Scenes;
@@ -213,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C2355E29C5474100DB08F6 /* Entity */,
+				B6E0A53F29C77668003B4145 /* Enum */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -229,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B6C2356229C5488D00DB08F6 /* RootView.swift */,
+				B6E0A52929C75968003B4145 /* RootViewBuilder.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -236,8 +326,9 @@
 		B6C2356429C552D700DB08F6 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B6C2356529C552F000DB08F6 /* LoginView.swift */,
 				B6C2356A29C5554300DB08F6 /* LoginPresenter.swift */,
+				B6C2356529C552F000DB08F6 /* LoginView.swift */,
+				B6E0A52B29C75ACF003B4145 /* LoginViewBuilder.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -245,7 +336,10 @@
 		B6C2356729C5538800DB08F6 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B6C2357629C57F1200DB08F6 /* MenuPresenter.swift */,
 				B6C2356829C553DF00DB08F6 /* MenuView.swift */,
+				B67555FE29C60CB6005F2BE2 /* MenuViewBuilder.swift */,
+				B6C2357C29C5906800DB08F6 /* MenuViewModel.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -266,6 +360,30 @@
 			path = ButtonStyle;
 			sourceTree = "<group>";
 		};
+		B6C2357329C5784100DB08F6 /* AppTab */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2357429C579D500DB08F6 /* AppTabView.swift */,
+			);
+			path = AppTab;
+			sourceTree = "<group>";
+		};
+		B6E0A52F29C768A6003B4145 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0A53029C768B1003B4145 /* Selection.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6E0A53F29C77668003B4145 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0A52D29C767F8003B4145 /* ValidationMenus.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +400,8 @@
 			dependencies = (
 			);
 			name = Regex;
+			packageProductDependencies = (
+			);
 			productName = Regex;
 			productReference = B6A215E329C4A890008F9D5C /* Regex.app */;
 			productType = "com.apple.product-type.application";
@@ -354,6 +474,8 @@
 				Base,
 			);
 			mainGroup = B6A215DA29C4A890008F9D5C;
+			packageReferences = (
+			);
 			productRefGroup = B6A215E429C4A890008F9D5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,16 +519,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E0A52E29C767F8003B4145 /* ValidationMenus.swift in Sources */,
+				B67555FD29C606AD005F2BE2 /* PasswordSettingView.swift in Sources */,
 				B6A215E729C4A890008F9D5C /* AppDelegate.swift in Sources */,
+				B6C2357D29C5906800DB08F6 /* MenuViewModel.swift in Sources */,
 				B6C2357229C5616300DB08F6 /* RoundedButtonStyle.swift in Sources */,
+				B6E0A53329C76BEC003B4145 /* EmailSettingPresenter.swift in Sources */,
 				B6C2356929C553DF00DB08F6 /* MenuView.swift in Sources */,
+				B6E0A52A29C75968003B4145 /* RootViewBuilder.swift in Sources */,
+				B6E0A53729C76C71003B4145 /* EmailSettingViewModel.swift in Sources */,
+				B6E0A53529C76C07003B4145 /* EmailSettingViewBuilder.swift in Sources */,
 				B6C2356629C552F000DB08F6 /* LoginView.swift in Sources */,
 				B6C2356B29C5554300DB08F6 /* LoginPresenter.swift in Sources */,
+				B6E0A52C29C75ACF003B4145 /* LoginViewBuilder.swift in Sources */,
 				B6A2161829C4A977008F9D5C /* PasswordValidateUseCase.swift in Sources */,
+				B6E0A53929C770AB003B4145 /* PasswordSettingPresenter.swift in Sources */,
+				B67555FA29C5FD76005F2BE2 /* Router.swift in Sources */,
 				B6C2356029C5476300DB08F6 /* AppState.swift in Sources */,
+				B67555F829C5E531005F2BE2 /* Presenter.swift in Sources */,
+				B6E0A53D29C770C9003B4145 /* PasswordSettingViewModel.swift in Sources */,
 				B6C2356329C5488D00DB08F6 /* RootView.swift in Sources */,
 				B6A215E929C4A890008F9D5C /* SceneDelegate.swift in Sources */,
+				B6E0A53B29C770BD003B4145 /* PasswordSettingViewBuilder.swift in Sources */,
+				B6E0A53129C768B1003B4145 /* Selection.swift in Sources */,
+				B67555FF29C60CB6005F2BE2 /* MenuViewBuilder.swift in Sources */,
+				B675560229C615B7005F2BE2 /* EmailSettingView.swift in Sources */,
 				B6A2161D29C4AE78008F9D5C /* EmailValidateUseCase.swift in Sources */,
+				B6C2357529C579D500DB08F6 /* AppTabView.swift in Sources */,
+				B6C2357729C57F1200DB08F6 /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
