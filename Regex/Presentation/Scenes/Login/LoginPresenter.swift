@@ -9,7 +9,7 @@ import Foundation
 
 final class LoginPresenter: Presenter {
 
-    let appState: AppState
+    private let appState: AppState
 
     init(appState: AppState) {
         self.appState = appState

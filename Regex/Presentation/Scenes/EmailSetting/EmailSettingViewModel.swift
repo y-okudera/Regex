@@ -9,5 +9,6 @@ import Foundation
 
 final class EmailSettingViewModel: ObservableObject {
     @Published var email = ""
-    @Published var isValid = false
+    @Published var isValidEmail = false
+    @Published var isCompletedEmailSetting = false
 }

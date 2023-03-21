@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
 
-    @ObservedObject var viewModel: MenuViewModel
+    @ObservedObject private var viewModel: MenuViewModel
     var presenter: MenuPresenter!
 
     init(viewModel: MenuViewModel) {

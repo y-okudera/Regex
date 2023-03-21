@@ -13,7 +13,8 @@ enum PasswordSettingViewBuilder {
 
         let presenter = PasswordSettingPresenter(
             viewModel: viewModel,
-            passwordValidateUseCase: PasswordValidateUseCaseProvider.provide()
+            passwordLengthValidateUseCase: PasswordLengthValidateUseCaseProvider.provide(),
+            passwordCharacterValidateUseCase: PasswordCharacterValidateUseCaseProvider.provide()
         )
 
         var view = PasswordSettingView(viewModel: viewModel)

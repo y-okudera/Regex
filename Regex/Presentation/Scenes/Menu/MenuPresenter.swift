@@ -10,7 +10,7 @@ import SwiftUI
 
 final class MenuPresenter: Presenter {
 
-    @ObservedObject var viewModel: MenuViewModel
+    @ObservedObject private var viewModel: MenuViewModel
 
     init(viewModel: MenuViewModel) {
         self.viewModel = viewModel

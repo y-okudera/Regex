@@ -10,10 +10,11 @@ import Foundation
 final class PasswordSettingViewModel: ObservableObject {
     @Published var password = ""
     @Published var confirmPassword = ""
-    @Published var isValidPassword = false
-    @Published var isValidConfirmPassword = false
-
-    var isValid: Bool {
-        return password == confirmPassword && isValidPassword && isValidConfirmPassword
+    @Published var isValidPasswordCharacters = false
+    @Published var isValidPasswordLength = false
+    var isValidConfirmPassword: Bool {
+        return password == confirmPassword
     }
+
+    @Published var isCompletedPasswordSetting = false
 }

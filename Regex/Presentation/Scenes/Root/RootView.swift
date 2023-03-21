@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject private var appState: AppState
 
     var body: some View {
         ZStack {
