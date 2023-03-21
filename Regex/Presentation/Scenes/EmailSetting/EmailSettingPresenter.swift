@@ -10,8 +10,8 @@ import SwiftUI
 
 final class EmailSettingPresenter: Presenter {
 
-    @ObservedObject var viewModel: EmailSettingViewModel
-    let emailValidateUseCase: EmailValidateUseCase
+    @ObservedObject private var viewModel: EmailSettingViewModel
+    private let emailValidateUseCase: EmailValidateUseCase
 
     init(viewModel: EmailSettingViewModel, emailValidateUseCase: EmailValidateUseCase) {
         self.viewModel = viewModel
@@ -23,12 +23,15 @@ extension EmailSettingPresenter {
 
     enum Inputs {
         case onChangeEmailText(String)
+        case onTapSettingButton
     }
 
     func apply(inputs: Inputs) {
         switch inputs {
         case .onChangeEmailText(let email):
-            viewModel.isValid = emailValidateUseCase.execute(email: email)
+            viewModel.isValidEmail = emailValidateUseCase.execute(email)
+        case .onTapSettingButton:
+            viewModel.isCompletedEmailSetting = true
         }
     }
 }
