@@ -11,17 +11,11 @@ import SwiftUI
 final class PasswordSettingPresenter: Presenter {
 
     @ObservedObject private var viewModel: PasswordSettingViewModel
-    private let passwordLengthValidateUseCase: PasswordLengthValidateUseCase
-    private let passwordCharacterValidateUseCase: PasswordCharacterValidateUseCase
+    @Injected(\.passwordLengthValidateInteractor) var passwordLengthValidateInteractor: PasswordLengthValidateUseCase
+    @Injected(\.passwordCharacterValidateInteractor) var passwordCharacterValidateInteractor: PasswordCharacterValidateUseCase
 
-    init(
-        viewModel: PasswordSettingViewModel,
-        passwordLengthValidateUseCase: PasswordLengthValidateUseCase,
-        passwordCharacterValidateUseCase: PasswordCharacterValidateUseCase
-    ) {
+    init(viewModel: PasswordSettingViewModel) {
         self.viewModel = viewModel
-        self.passwordLengthValidateUseCase = passwordLengthValidateUseCase
-        self.passwordCharacterValidateUseCase = passwordCharacterValidateUseCase
     }
 }
 
@@ -36,11 +30,11 @@ extension PasswordSettingPresenter {
     func apply(inputs: Inputs) {
         switch inputs {
         case .onAppear:
-            viewModel.isValidPasswordCharacters = passwordCharacterValidateUseCase.execute(viewModel.password)
-            viewModel.isValidPasswordLength = passwordLengthValidateUseCase.execute(viewModel.password)
+            viewModel.isValidPasswordCharacters = passwordCharacterValidateInteractor.execute(viewModel.password)
+            viewModel.isValidPasswordLength = passwordLengthValidateInteractor.execute(viewModel.password)
         case .onChangePasswordText(let password):
-            viewModel.isValidPasswordCharacters = passwordCharacterValidateUseCase.execute(password)
-            viewModel.isValidPasswordLength = passwordLengthValidateUseCase.execute(password)
+            viewModel.isValidPasswordCharacters = passwordCharacterValidateInteractor.execute(password)
+            viewModel.isValidPasswordLength = passwordLengthValidateInteractor.execute(password)
         case .onTapSettingButton:
             viewModel.isCompletedPasswordSetting = true
         }

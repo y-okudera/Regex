@@ -11,11 +11,10 @@ import SwiftUI
 final class EmailSettingPresenter: Presenter {
 
     @ObservedObject private var viewModel: EmailSettingViewModel
-    private let emailValidateUseCase: EmailValidateUseCase
+    @Injected(\.emailValidateInteractor) var emailValidateInteractor: EmailValidateUseCase
 
-    init(viewModel: EmailSettingViewModel, emailValidateUseCase: EmailValidateUseCase) {
+    init(viewModel: EmailSettingViewModel) {
         self.viewModel = viewModel
-        self.emailValidateUseCase = emailValidateUseCase
     }
 }
 
@@ -29,7 +28,7 @@ extension EmailSettingPresenter {
     func apply(inputs: Inputs) {
         switch inputs {
         case .onChangeEmailText(let email):
-            viewModel.isValidEmail = emailValidateUseCase.execute(email)
+            viewModel.isValidEmail = emailValidateInteractor.execute(email)
         case .onTapSettingButton:
             viewModel.isCompletedEmailSetting = true
         }
