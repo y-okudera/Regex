@@ -10,17 +10,7 @@ import XCTest
 
 final class EmailValidateUseCaseTests: XCTestCase {
 
-    private var sut: EmailValidateUseCase!
-
-    override func setUp() {
-        super.setUp()
-        sut = EmailValidateUseCaseProvider.provide()
-    }
-
-    override func tearDown() {
-        sut = nil
-        super.tearDown()
-    }
+    @Injected(\.emailValidateInteractor) var sut: EmailValidateUseCase
 
     func testValidEmail() {
         XCTAssertTrue(sut.execute("test@example.com"))

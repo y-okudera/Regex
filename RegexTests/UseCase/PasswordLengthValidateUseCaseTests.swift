@@ -10,17 +10,7 @@ import XCTest
 
 final class PasswordLengthValidateUseCaseTests: XCTestCase {
 
-    private var sut: PasswordLengthValidateUseCase!
-
-    override func setUp() {
-        super.setUp()
-        sut = PasswordLengthValidateUseCaseProvider.provide()
-    }
-
-    override func tearDown() {
-        sut = nil
-        super.tearDown()
-    }
+    @Injected(\.passwordLengthValidateInteractor) var sut: PasswordLengthValidateUseCase
 
     func testValidate() {
         XCTAssertTrue(sut.execute("password"))

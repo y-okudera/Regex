@@ -10,17 +10,7 @@ import XCTest
 
 final class PasswordCharacterValidateUseCaseTests: XCTestCase {
 
-    private var sut: PasswordCharacterValidateUseCase!
-
-    override func setUp() {
-        super.setUp()
-        sut = PasswordCharacterValidateUseCaseProvider.provide()
-    }
-
-    override func tearDown() {
-        sut = nil
-        super.tearDown()
-    }
+    @Injected(\.passwordCharacterValidateInteractor) var sut: PasswordCharacterValidateUseCase
 
     func testValidate() {
         XCTAssertTrue(sut.execute("password123!@"))
@@ -31,4 +21,5 @@ final class PasswordCharacterValidateUseCaseTests: XCTestCase {
         XCTAssertFalse(sut.execute("パスワード"))
         XCTAssertFalse(sut.execute("password$%^"))
     }
+
 }

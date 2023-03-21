@@ -11,10 +11,7 @@ enum EmailSettingViewBuilder {
     static func build() -> EmailSettingView {
         let viewModel = EmailSettingViewModel()
 
-        let presenter = EmailSettingPresenter(
-            viewModel: viewModel,
-            emailValidateUseCase: EmailValidateUseCaseProvider.provide()
-        )
+        let presenter = EmailSettingPresenter(viewModel: viewModel)
 
         var view = EmailSettingView(viewModel: viewModel)
         view.presenter = presenter
