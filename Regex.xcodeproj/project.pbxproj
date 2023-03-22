@@ -19,7 +19,9 @@
 		B6A2160829C4A891008F9D5C /* RegexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2160729C4A891008F9D5C /* RegexUITests.swift */; };
 		B6A2160A29C4A891008F9D5C /* RegexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */; };
 		B6A2161D29C4AE78008F9D5C /* EmailValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */; };
-		B6A2161F29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */; };
+		B6B9185429CB4A1D0015347F /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9185329CB4A1D0015347F /* EmailValidatorTests.swift */; };
+		B6B9185629CB4A330015347F /* PasswordCharacterValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9185529CB4A330015347F /* PasswordCharacterValidatorTests.swift */; };
+		B6B9185829CB4A5A0015347F /* PasswordLengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B9185729CB4A5A0015347F /* PasswordLengthValidatorTests.swift */; };
 		B6C2355A29C5422600DB08F6 /* Presentation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C2355929C5422600DB08F6 /* Presentation.xcassets */; };
 		B6C2356029C5476300DB08F6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2355F29C5476300DB08F6 /* AppState.swift */; };
 		B6C2356329C5488D00DB08F6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2356229C5488D00DB08F6 /* RootView.swift */; };
@@ -35,8 +37,6 @@
 		B6CD7E2E29C9E1C10031DB9D /* PasswordLengthValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E2D29C9E1C10031DB9D /* PasswordLengthValidateUseCase.swift */; };
 		B6CD7E3029C9E1DC0031DB9D /* PasswordCharacterValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E2F29C9E1DC0031DB9D /* PasswordCharacterValidateUseCase.swift */; };
 		B6CD7E3229C9E5790031DB9D /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E3129C9E5790031DB9D /* EmailValidator.swift */; };
-		B6CD7E3429C9E7680031DB9D /* PasswordLengthValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E3329C9E7680031DB9D /* PasswordLengthValidateUseCaseTests.swift */; };
-		B6CD7E3629C9E7800031DB9D /* PasswordCharacterValidateUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E3529C9E7800031DB9D /* PasswordCharacterValidateUseCaseTests.swift */; };
 		B6CD7E3929C9F63C0031DB9D /* CheckmarkText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E3829C9F63C0031DB9D /* CheckmarkText.swift */; };
 		B6CD7E3C29C9F8DE0031DB9D /* UnmaskableSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E3B29C9F8DE0031DB9D /* UnmaskableSecureField.swift */; };
 		B6CD7E4229CA1C300031DB9D /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD7E4129CA1C300031DB9D /* InjectionKey.swift */; };
@@ -92,7 +92,9 @@
 		B6A2160729C4A891008F9D5C /* RegexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUITests.swift; sourceTree = "<group>"; };
 		B6A2160929C4A891008F9D5C /* RegexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B6A2161C29C4AE78008F9D5C /* EmailValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateUseCase.swift; sourceTree = "<group>"; };
-		B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateUseCaseTests.swift; sourceTree = "<group>"; };
+		B6B9185329CB4A1D0015347F /* EmailValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		B6B9185529CB4A330015347F /* PasswordCharacterValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCharacterValidatorTests.swift; sourceTree = "<group>"; };
+		B6B9185729CB4A5A0015347F /* PasswordLengthValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLengthValidatorTests.swift; sourceTree = "<group>"; };
 		B6C2355929C5422600DB08F6 /* Presentation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Presentation.xcassets; sourceTree = "<group>"; };
 		B6C2355F29C5476300DB08F6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B6C2356229C5488D00DB08F6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -108,8 +110,6 @@
 		B6CD7E2D29C9E1C10031DB9D /* PasswordLengthValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLengthValidateUseCase.swift; sourceTree = "<group>"; };
 		B6CD7E2F29C9E1DC0031DB9D /* PasswordCharacterValidateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCharacterValidateUseCase.swift; sourceTree = "<group>"; };
 		B6CD7E3129C9E5790031DB9D /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
-		B6CD7E3329C9E7680031DB9D /* PasswordLengthValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLengthValidateUseCaseTests.swift; sourceTree = "<group>"; };
-		B6CD7E3529C9E7800031DB9D /* PasswordCharacterValidateUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCharacterValidateUseCaseTests.swift; sourceTree = "<group>"; };
 		B6CD7E3829C9F63C0031DB9D /* CheckmarkText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkText.swift; sourceTree = "<group>"; };
 		B6CD7E3B29C9F8DE0031DB9D /* UnmaskableSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnmaskableSecureField.swift; sourceTree = "<group>"; };
 		B6CD7E4129CA1C300031DB9D /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 		B6A215FC29C4A891008F9D5C /* RegexTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6A2161929C4A98B008F9D5C /* UseCase */,
+				B6B9185129CB49650015347F /* Domain */,
 			);
 			path = RegexTests;
 			sourceTree = "<group>";
@@ -260,14 +260,22 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
-		B6A2161929C4A98B008F9D5C /* UseCase */ = {
+		B6B9185129CB49650015347F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				B6A2161E29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift */,
-				B6CD7E3529C9E7800031DB9D /* PasswordCharacterValidateUseCaseTests.swift */,
-				B6CD7E3329C9E7680031DB9D /* PasswordLengthValidateUseCaseTests.swift */,
+				B6B9185229CB496E0015347F /* Service */,
 			);
-			path = UseCase;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B6B9185229CB496E0015347F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B6B9185329CB4A1D0015347F /* EmailValidatorTests.swift */,
+				B6B9185529CB4A330015347F /* PasswordCharacterValidatorTests.swift */,
+				B6B9185729CB4A5A0015347F /* PasswordLengthValidatorTests.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B6C2355629C540E500DB08F6 /* Application */ = {
@@ -670,9 +678,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CD7E3629C9E7800031DB9D /* PasswordCharacterValidateUseCaseTests.swift in Sources */,
-				B6A2161F29C4AF2C008F9D5C /* EmailValidateUseCaseTests.swift in Sources */,
-				B6CD7E3429C9E7680031DB9D /* PasswordLengthValidateUseCaseTests.swift in Sources */,
+				B6B9185429CB4A1D0015347F /* EmailValidatorTests.swift in Sources */,
+				B6B9185629CB4A330015347F /* PasswordCharacterValidatorTests.swift in Sources */,
+				B6B9185829CB4A5A0015347F /* PasswordLengthValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
