@@ -219,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				B6C2355629C540E500DB08F6 /* Application */,
-				B6C2355D29C5471A00DB08F6 /* Domain */,
 				B6C2355729C5413B00DB08F6 /* Presentation */,
 				B6A2161629C4A942008F9D5C /* UseCase */,
 			);
@@ -321,14 +320,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B6C2355D29C5471A00DB08F6 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				B6E0A53F29C77668003B4145 /* Enum */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		B6C2356129C5488000DB08F6 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +342,7 @@
 		B6C2356729C5538800DB08F6 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B6E0A53F29C77668003B4145 /* Enum */,
 				B6C2357629C57F1200DB08F6 /* MenuPresenter.swift */,
 				B6C2356829C553DF00DB08F6 /* MenuView.swift */,
 				B67555FE29C60CB6005F2BE2 /* MenuViewBuilder.swift */,
