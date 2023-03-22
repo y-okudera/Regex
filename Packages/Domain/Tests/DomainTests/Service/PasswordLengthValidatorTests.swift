@@ -1,12 +1,12 @@
 //
 //  PasswordLengthValidatorTests.swift
-//  RegexTests
+//  DomainTests
 //
 //  Created by Yuki Okudera on 2023/03/22.
 //
 
 import XCTest
-@testable import Regex
+@testable import Domain
 
 final class PasswordLengthValidatorTests: XCTestCase {
 

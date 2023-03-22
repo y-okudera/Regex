@@ -5,6 +5,7 @@
 //  Created by Yuki Okudera on 2023/03/18.
 //
 
+import Domain
 import SwiftUI
 
 extension Identifiable where Self: Hashable {
