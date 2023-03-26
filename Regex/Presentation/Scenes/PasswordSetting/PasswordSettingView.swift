@@ -5,6 +5,7 @@
 //  Created by Yuki Okudera on 2023/03/18.
 //
 
+import DesignToken
 import SwiftUI
 
 struct PasswordSettingView: View {
@@ -25,9 +26,9 @@ struct PasswordSettingView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             UnmaskableSecureField("パスワードを入力してください", text: $viewModel.password)
-                .onChange(of: viewModel.password) { newValue in
+                .onChangeText(textDidChange: { newValue in
                     presenter.apply(inputs: .onChangePasswordText(newValue))
-                }
+                })
 
             Text("確認用パスワード")
                 .font(.headline)
