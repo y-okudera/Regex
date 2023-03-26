@@ -4,30 +4,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "Domain",
+    name: "Application",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Domain",
-            targets: [
-                "Domain",
-            ]
-        ),
+            name: "Application",
+            targets: ["Application"]),
     ],
     dependencies: [
         // Local
         .package(name: "Injected", path: "../Injected"),
+        .package(name: "Domain", path: "../Domain"),
     ],
     targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "Domain",
+            name: "Application",
             dependencies: [
                 // Local
                 .product(name: "Injected", package: "Injected"),
+                .product(name: "Domain", package: "Domain"),
             ]
         ),
         .testTarget(
-            name: "DomainTests",
-            dependencies: ["Domain"]),
+            name: "ApplicationTests",
+            dependencies: ["Application"]),
     ]
 )
